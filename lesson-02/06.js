@@ -1,4 +1,5 @@
-/**Давайте-ка нашего парня, чтобы он не зазнавался переселим в ‘city’ 'Bobryisk' , а потом опять же убедимся в консоли, что мы все правильно скопировали. (Т.е. необходимо создать глубокую копию объекта passportWithAddress, а затем 'LA' заменить на 'Bobryisk' в city).*/
+/**Давайте-ка нашего парня, чтобы он не зазнавался переселим в ‘city’ 'Bobryisk' , а потом опять же убедимся в консоли, что мы все правильно скопировали. (Т.е. необходимо создать глубокую копию объекта passportWithAddress, а затем 'LA' заменить на 'Bobryisk' в city).
+ */
 
 let passportWithAddress = {
 	name: 'Petr',
@@ -9,8 +10,7 @@ let passportWithAddress = {
 	},
 }
 
-const clone = structuredClone(passportWithAddress, {
-	address: { citi: 'Bobryisk' },
-})
+const clones = structuredClone(passportWithAddress)
+clones.address.city = 'Bobryisk'
 console.log(passportWithAddress.address.city)
-console.log(clone.address.city)
+console.log(clones.address.city)
