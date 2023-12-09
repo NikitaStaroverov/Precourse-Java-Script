@@ -1,4 +1,4 @@
 /**Переделай функцию на стрелочный синтаксис*/
 
-const doArrow = value => console.log(value)
+doArrow = value => console.log(value)
 doArrow('Передай 5')
