@@ -4,6 +4,6 @@ let passport = {
 	name: 'Petr',
 	surname: 'Petrov',
 }
-let clone = Qbject.assign({}, passport, { name: 'Ivan' })
+let clone = Qbject.assign(passport, { name: 'Ivan' })
 console.log(passport)
 console.log(clone)
